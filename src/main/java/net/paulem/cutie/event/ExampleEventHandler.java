@@ -1,6 +1,6 @@
-package com.example.modtemplate.event;
+package net.paulem.cutie.event;
 
-import com.example.modtemplate.ModTemplate;
+import net.paulem.cutie.ModCutie;
 import net.minecraft.server.level.ServerPlayer;
 
 import java.util.Objects;
@@ -10,9 +10,9 @@ public class ExampleEventHandler {
 	public static void onPlayerHurt(ServerPlayer player) {
 		// MinecraftServer.pvp is private... only here to test ATs/AWs
 		if (Objects.requireNonNull(player.getServer()).pvp) {
-			ModTemplate.LOGGER.info("{} took damage. PVP is allowed.", player.getDisplayName());
+			ModCutie.LOGGER.info("{} took damage. PVP is allowed.", player.getDisplayName());
 		} else {
-			ModTemplate.LOGGER.info("{} took damage. PVP is disallowed.", player.getDisplayName());
+			ModCutie.LOGGER.info("{} took damage. PVP is disallowed.", player.getDisplayName());
 		}
 	}
 }

@@ -1,8 +1,8 @@
-package com.example.modtemplate.platform.fabric;
+package net.paulem.cutie.platform.fabric;
 
 //? fabric {
 
-import com.example.modtemplate.platform.Platform;
+import net.paulem.cutie.platform.Platform;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatform implements Platform {

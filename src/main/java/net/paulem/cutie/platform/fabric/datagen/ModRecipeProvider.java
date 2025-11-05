@@ -1,8 +1,8 @@
-package com.example.modtemplate.platform.fabric.datagen;
+package net.paulem.cutie.platform.fabric.datagen;
 
 //? fabric {
 
-import com.example.modtemplate.ModTemplate;
+import net.paulem.cutie.ModCutie;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -34,7 +34,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 	@Override
 	public String getName() {
-		return ModTemplate.MOD_ID + "_recipe_provider";
+		return ModCutie.MOD_ID + "_recipe_provider";
 	}
 
 }

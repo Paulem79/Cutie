@@ -1,4 +1,4 @@
-package com.example.modtemplate.platform;
+package net.paulem.cutie.platform;
 
 public interface Platform {
 	boolean isModLoaded(String modId);

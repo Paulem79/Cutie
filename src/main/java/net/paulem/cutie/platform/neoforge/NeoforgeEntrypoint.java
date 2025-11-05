@@ -1,4 +1,4 @@
-package com.example.modtemplate.platform.neoforge;
+package net.paulem.cutie.platform.neoforge;
 
 //? neoforge {
 /*

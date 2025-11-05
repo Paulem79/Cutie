@@ -1,15 +1,15 @@
-package com.example.modtemplate.platform.fabric;
+package net.paulem.cutie.platform.fabric;
 
 //? fabric {
 
-import com.example.modtemplate.ModTemplate;
+import net.paulem.cutie.ModCutie;
 import net.fabricmc.api.ModInitializer;
 
 public class FabricEntrypoint implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModTemplate.onInitialize();
+		ModCutie.onInitialize();
 		FabricEventSubscriber.registerEvents();
 	}
 }
