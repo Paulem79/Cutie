@@ -1,5 +1,6 @@
-package net.paulem.cutie.items;
+package net.paulem.cutie.platform.fabric.items;
 
+//? fabric {
 import net.paulem.cutie.ModCutie;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -25,4 +26,9 @@ public class ModItems {
 
 		return item;
 	}
+
+	public static void initialize() {
+		ModCutie.LOGGER.info("Registered Mod Items for {}", ModCutie.MOD_ID);
+	}
 }
+//?}
