@@ -2,7 +2,7 @@ package net.paulem.cutie.platform.neoforge;
 
 //? neoforge {
 /*
-import com.example.modtemplate.platform.Platform;
+import net.paulem.cutie.platform.Platform;
 import net.neoforged.fml.ModList;
 
 public class NeoforgePlatform implements Platform {

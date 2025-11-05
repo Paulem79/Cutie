@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 //? fabric {
 import net.paulem.cutie.platform.fabric.FabricPlatform;
 //?} neoforge {
-/*import com.example.modtemplate.platform.neoforge.NeoforgePlatform;
+/*import net.paulem.cutie.platform.neoforge.NeoforgePlatform;
  *///?}
 
 @SuppressWarnings("LoggingSimilarMessage")

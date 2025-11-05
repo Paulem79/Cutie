@@ -2,7 +2,7 @@ package net.paulem.cutie.platform.neoforge;
 
 //? neoforge {
 /*
-import com.example.modtemplate.ModTemplate;
+import net.paulem.cutie.ModTemplate;
 import net.neoforged.fml.common.Mod;
 
 @Mod(ModTemplate.MOD_ID)
