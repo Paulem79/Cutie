@@ -104,17 +104,14 @@ jobs:
       - name: Push topic branch
         run: git -C ${THIS_REPO} push -u origin "${HEAD_BRANCH}"
 
-      # Create a pull request in the target repository
       - name: Create pull request
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          GITHUB_USER: ${{ github.actor }}
-        run: |
-          pushd ${THIS_REPO}
-          hub pull-request \
-            -b "${BASE_BRANCH}" \
-            -h "${HEAD_BRANCH}" \
-            --no-edit \
-            -m "Pull updates from ${REPO_TEMPLATE}" \
-            -m "Pull updates from ${REPO_TEMPLATE}"
-          popd
+  env:
+    GITHUB_TOKEN: ${{ github.token }}
+  run: |
+    pushd ${THIS_REPO}
+    gh pr create \
+      --base "${BASE_BRANCH}" \
+      --head "${HEAD_BRANCH}" \
+      --title "Pull updates from ${REPO_TEMPLATE}" \
+      --body "Automatic sync from template repository."
+    popd
