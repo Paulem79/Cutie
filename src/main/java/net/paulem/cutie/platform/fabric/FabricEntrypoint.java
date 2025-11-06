@@ -4,6 +4,7 @@ package net.paulem.cutie.platform.fabric;
 
 import net.paulem.cutie.ModCutie;
 import net.fabricmc.api.ModInitializer;
+import net.paulem.cutie.platform.fabric.blocks.ModBlocks;
 import net.paulem.cutie.platform.fabric.items.ModItems;
 
 public class FabricEntrypoint implements ModInitializer {
@@ -13,6 +14,7 @@ public class FabricEntrypoint implements ModInitializer {
 		ModCutie.onInitialize();
 		FabricEventSubscriber.registerEvents();
 
+		ModBlocks.initialize();
 		ModItems.initialize();
 	}
 }
