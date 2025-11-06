@@ -105,13 +105,13 @@ jobs:
         run: git -C ${THIS_REPO} push -u origin "${HEAD_BRANCH}"
 
       - name: Create pull request
-  env:
-    GITHUB_TOKEN: ${{ github.token }}
-  run: |
-    pushd ${THIS_REPO}
-    gh pr create \
-      --base "${BASE_BRANCH}" \
-      --head "${HEAD_BRANCH}" \
-      --title "Pull updates from ${REPO_TEMPLATE}" \
-      --body "Automatic sync from template repository."
-    popd
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          pushd ${THIS_REPO}
+          gh pr create \
+          --base "${BASE_BRANCH}" \
+          --head "${HEAD_BRANCH}" \
+          --title "Pull updates from ${REPO_TEMPLATE}" \
+          --body "Automatic sync from template repository."
+          popd
